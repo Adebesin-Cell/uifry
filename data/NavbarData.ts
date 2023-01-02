@@ -26,3 +26,11 @@ export const NavbarData: NavbarDataProps[] = [
     href: '/company'
   }
 ];
+
+export const NavbarDataContact: NavbarDataProps[] = [
+  {
+    label: 'Contact Sales',
+    hasIcon: false,
+    href: '/sales'
+  }
+];
