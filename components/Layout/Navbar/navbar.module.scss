@@ -1,0 +1,11 @@
+.nav {
+    display: flex;
+    padding: calc(var(--span-s)) calc(var(--span-2xl) + var(--span-xs));
+    justify-content: space-between;
+    border-bottom: 1px solid #808080;
+
+    &__image {
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
