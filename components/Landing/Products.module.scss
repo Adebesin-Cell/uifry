@@ -1,0 +1,54 @@
+.product {
+    position: relative;
+    min-height: 60vh;
+    padding-top: calc(var(--span-2xl));
+
+    &__bg {
+        filter: blur(125px);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: -20%;
+        z-index: -1;
+    }
+
+    &__header {
+        padding-top: calc(2 * var(--span-2xl));
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__heading {
+        font-family: "KyivType Sans Bold";
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: #ffffff;
+
+        span {
+            display: block;
+        }
+    }
+
+
+    &__button {
+        cursor: pointer;
+        font-family: var(--inter-font);
+        font-size: var(--size-m);
+        font-weight: var(--weight-md);
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        outline: none;
+        border: 1px solid #ffffff;
+        background: none;
+        color: #ffffff;
+        border-radius: 100px;
+        padding: var(--span-xs) calc(var(--span-xs) + 5px);
+    }
+
+}

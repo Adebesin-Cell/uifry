@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Hero from '../components/Landing/Hero';
+import Products from '../components/Landing/Products';
 import Layout from '../components/Layout/Layout/Layout';
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <Layout>
         <Hero />
+        <Products />
       </Layout>
     </>
   );

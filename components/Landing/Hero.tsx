@@ -1,5 +1,4 @@
 import styles from './Hero.module.scss';
-import background from '../../assets/bg.svg';
 import Image from 'next/image';
 import heroImage from '../../assets/hero-image.svg';
 import StarIcon from '../Icons/StarIcon';
@@ -64,7 +63,6 @@ const Hero = () => {
           />
         </div>
       </div>
-      {/* <Image src={background} className={styles.hero__bg} alt='bg' /> */}
     </div>
   );
 };
