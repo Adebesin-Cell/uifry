@@ -64,6 +64,10 @@
     &__extra {
         display: flex;
         align-items: center;
+
+        li {
+            margin-right: 0 !important;
+        }
     }
 
     &__button {
@@ -88,5 +92,8 @@
         align-items: center;
         justify-content: center;
         margin-left: var(--span-s);
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
     }
 }

@@ -1,0 +1,32 @@
+.hero {
+    margin-top: calc(2 * var(--span-xl));
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    &__heading {
+        font-family: "KyivType Sans Bold";
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 72px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        color: #F7F7F7;
+
+        span {
+            display: block;
+        }
+    }
+
+    &__paragraph {
+        margin-top: var(--span-m);
+        font-family: var(--inter-font);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #F7F7F7;
+        max-width: 75%;
+    }
+}
