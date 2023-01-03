@@ -3,9 +3,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    position: relative;
+    min-height: 100vh;
 
     &__heading {
-        font-family: "KyivType Sans Bold";
+        font-family: "Kyiv Type Sans Bold";
         font-size: 64px;
         font-weight: 700;
         line-height: 72px;
@@ -28,5 +30,13 @@
         text-align: left;
         color: #F7F7F7;
         max-width: 75%;
+    }
+
+    &__bg {
+        filter: blur(125px);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
