@@ -1,12 +1,16 @@
 .hero {
     margin-top: calc(2 * var(--span-xl));
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
     position: relative;
     min-height: 100vh;
 
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
     &__heading {
+        margin-top: calc(va(--span-s) + 5px);
         font-family: "Kyiv Type Sans Bold";
         font-size: 64px;
         font-weight: 700;
@@ -32,11 +36,100 @@
         max-width: 75%;
     }
 
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     &__bg {
         filter: blur(125px);
         position: absolute;
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    &__image-box {
+        display: block;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+    }
+
+    &__rating {
+        display: flex;
+        gap: var(--span-xs);
+        align-items: center;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: var(--span-xs);
+    }
+
+    &__text {
+        font-family: var(--inter-font);
+        font-size: var(--size-xs);
+        font-weight: var(--weight-md);
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #808080;
+
+        span {
+            color: #CCCCCC;
+        }
+    }
+
+    &__cta {
+        margin-top: var(--span-m);
+        display: flex;
+        align-items: center;
+
+        &-text {
+            font-family: var(--inter-font);
+            font-size: var(--size-xs);
+            font-weight: var(--weight-md);
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #28A263;
+            padding-left: calc(var(--span-xs) + 5px);
+            border-left: 1px solid #28A263;
+            max-width: 180px;
+        }
+
+        &-button {
+            background: #28A263;
+            outline: none;
+            border: 1px solid #28A263;
+            padding: calc(var(--span-xs) + 2px) calc(var(--span-s) + 5px);
+            color: #fff;
+            font-family: var(--inter-font);
+            font-size: calc(var(--size-m) + 2px);
+            font-weight: var(--weight-lg);
+            line-height: 32px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            cursor: pointer;
+            border-radius: 12px;
+            margin-left: var(--span-l);
+        }
+    }
+
+    &__sponsors {
+        margin-top: calc(1.5 * var(--span-2xl));
+        display: flex;
+        align-items: center;
+    }
+
+    &__sponsor {
+        &:not(:last-child) {
+            margin-right: var(--span-2xl);
+        }
     }
 }
