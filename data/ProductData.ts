@@ -6,28 +6,32 @@ export type ProductDataProps = {
 
 export const ProductData: ProductDataProps[] = [
   {
-    title: 'Resource Pooling',
-    summary: 'Create a thrift group and save towards a common goal',
+    title: 'Collaboration',
+    summary:
+      'Collaborative tools for facilitating communication and collaboration among team members.',
     image: '/images/card--3.png'
   },
   {
-    title: 'Realtime Graph Chart',
-    summary: 'View your expenses and incomes realtime.',
+    title: 'Reporting and Analytics',
+    summary:
+      'Features for generating reports and analyzing data on the progress and performance of a project.',
     image: '/images/card--1.png'
   },
   {
-    title: 'Expenses Limiter',
-    summary: 'Control your expenses.',
+    title: 'Resource Allocation',
+    summary: 'Assign and track the use of resources within a project',
     image: '/images/card--2.png'
   },
   {
-    title: 'Link multiple Accounts',
-    summary: 'Add multiple account into one whole account.',
+    title: 'Project Management',
+    summary:
+      'Tool for organizing and tracking tasks and deadlines within a project',
     image: '/images/card--3.png'
   },
   {
-    title: 'Analysed Report',
-    summary: 'Get report analysis at intervals.',
+    title: 'Time Tracking',
+    summary:
+      'Recording and analyzing the time spent on tasks within a project.',
     image: '/images/card--4.png'
   }
 ];

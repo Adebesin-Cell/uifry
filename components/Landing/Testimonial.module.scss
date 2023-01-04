@@ -1,0 +1,39 @@
+.testimonial {
+    position: relative;
+    min-height: 60vh;
+    padding-top: calc(var(--span-2xl));
+
+    &__header {
+        padding-top: calc(2 * var(--span-2xl));
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__heading {
+        font-family: "KyivType Sans Bold";
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: #F4F4F6;
+
+        &-green {
+            display: inline !important;
+            color: #2DDB81;
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+    &__wrapper {
+        margin-top: calc(2 * var(--span-xl));
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding-bottom: var(--span-2xl);
+    }
+}

@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Hero from '../components/Landing/Hero';
 import Products from '../components/Landing/Products';
+import Testimonial from '../components/Landing/Testimonial';
 import Layout from '../components/Layout/Layout/Layout';
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Layout>
         <Hero />
         <Products />
+        <Testimonial />
       </Layout>
     </>
   );

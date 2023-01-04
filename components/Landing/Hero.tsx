@@ -8,7 +8,7 @@ import sponsor3 from '../../assets/sponsor--3.svg';
 
 const Hero = () => {
   return (
-    <div className={`${styles.hero} container`}>
+    <section className={`${styles.hero} container`}>
       <div className={styles.hero__wrapper}>
         <div className={styles.hero__content}>
           <div className={styles.hero__top}>
@@ -63,7 +63,7 @@ const Hero = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
