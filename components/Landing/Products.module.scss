@@ -51,4 +51,69 @@
         padding: var(--span-xs) calc(var(--span-xs) + 5px);
     }
 
+    &__wrapper {
+        margin-top: calc(2 * var(--span-xl));
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow-x: hidden;
+        padding-bottom: var(--span-2xl);
+    }
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        white-space: nowrap;
+        transition: transform 300ms;
+
+        div {
+            white-space: initial;
+        }
+    }
+}
+
+.controls {
+    margin-top: var(--span-2xl);
+    display: flex;
+
+    &__prev {
+        margin-right: var(--span-s);
+        cursor: pointer;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all 300ms;
+        background: transparent;
+        outline: none;
+        border: 1px solid #ffffff;
+
+        svg {
+            path {
+                fill: #ffffff;
+            }
+        }
+    }
+
+    &__next {
+        cursor: pointer;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all 300ms;
+        background: transparent;
+        outline: none;
+        border: 1px solid #ffffff;
+
+        svg {
+            path {
+                fill: #ffffff;
+            }
+        }
+    }
 }
